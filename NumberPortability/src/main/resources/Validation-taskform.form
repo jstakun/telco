@@ -1,0 +1,43 @@
+
+<form id="1816865914">
+<property name="subject" value=""/>
+<property name="name" value="Validation-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="request_date" type="InputDate" id="2061426702">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (request)quot;"/>
+<property name="inputBinding" value="taskRequest/date"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="1" name="request_firstname" type="InputText" id="827198544">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;firstname (request)quot;"/>
+<property name="inputBinding" value="taskRequest/firstname"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="request_lastname" type="InputText" id="784610636">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;lastname (request)quot;"/>
+<property name="inputBinding" value="taskRequest/lastname"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="request_number" type="InputTextBigInteger" id="192219294">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;number (request)quot;"/>
+<property name="inputBinding" value="taskRequest/number"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.math.BigInteger"/>
+</field>
+<field position="4" name="request_status" type="InputText" id="377391921">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;status (request)quot;"/>
+<property name="inputBinding" value="taskRequest/status"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="taskRequest" name="#0000A0" type="dataModelerEntry" outId="" value="com.redhat.waw.bpm.NumberPortRequest" id="request"/>
+</form>
