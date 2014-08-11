@@ -33,3 +33,14 @@ rule "Invalid date"
         System.out.println("Executed Rule: " + drools.getRule().getName() );
 
 end
+
+rule "Retract request after validation"
+	dialect "mvel"
+	ruleflow-group "validate"
+	salience -10
+	when
+		request : NumberPortRequest(  )
+	then
+		retract(request);
+		System.out.println("Executed Rule: " + drools.getRule().getName() );
+end
