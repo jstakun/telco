@@ -11,8 +11,8 @@ function Date inOneMonth() {
 rule "Validate date"
 
     when
-        date.before(inOneMonth())
+        request : NumberProtRequest( date.before(inOneMonth()) )
     then
-        status="validate";
+        request.setStatus("validate");
 
 end
