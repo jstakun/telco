@@ -11,7 +11,7 @@ function Date inOneMonth() {
 rule "Validate date"
 
     when
-        request : NumberProtRequest( date.before(inOneMonth()) )
+        request : NumberPortRequest( date.before(inOneMonth()) )
     then
         request.setStatus("validate");
 
