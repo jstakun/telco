@@ -5,7 +5,7 @@ import java.util.Date;
 
 function Date inOneMonth() {
     Calendar now = calendar.getInstance();
-    retun now.add(Calendar.MONTH, 1).getTime();
+    return now.add(Calendar.MONTH, 1).getTime();
 }
 
 rule "Validate date"
