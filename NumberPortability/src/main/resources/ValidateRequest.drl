@@ -1,0 +1,18 @@
+import java.util.Calendar;
+import java.util.Date;
+
+//declare any global variables here
+
+function Date inOneMonth() {
+    Calendar now = calendar.getInstance();
+    retun now.add(Calendar.MONTH, 1).getTime();
+}
+
+rule "Validate date"
+
+    when
+        date.before(inOneMonth)
+    then
+        status="validate";
+
+end
