@@ -16,7 +16,7 @@ rule "Valid date"
     ruleflow-group "validate"
 
     when
-        $request : NumberPortRequest( date : $date )
+        request : NumberPortRequest( $date : date )
         not  NumberPortRequest($date < inOneMonth()) 
     then
         request.setStatus("validated");
