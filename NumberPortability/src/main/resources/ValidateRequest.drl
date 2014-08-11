@@ -12,6 +12,8 @@ function Date inOneMonth() {
 
 rule "Validate date"
 
+    ruleflow-group "validate"
+
     when
         request : NumberPortRequest( date.before(inOneMonth()) )
     then
