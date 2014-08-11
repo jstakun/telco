@@ -12,7 +12,7 @@ function Date inOneMonth() {
 }
 
 rule "Valid date"
-
+    dialect "mvel"
     ruleflow-group "validate"
 
     when
@@ -23,7 +23,7 @@ rule "Valid date"
 end
 
 rule "Invalid date"
-
+    dialect "mvel"
     ruleflow-group "validate"
 
     when
