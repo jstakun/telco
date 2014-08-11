@@ -5,7 +5,7 @@ import com.redhat.waw.bpm.NumberPortRequest;
 //declare any global variables here
 
 function Date inOneMonth() {
-    //Calendar now = calendar.getInstance();
+    Calendar now = calendar.getInstance();
     //return now.add(Calendar.MONTH, 1).getTime();
     return new Date();
 }
