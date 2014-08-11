@@ -28,7 +28,9 @@ rule "Invalid date"
     ruleflow-group "validate"
 
     when
-        request : NumberPortRequest( date before inOneMonth() )
+        Date( $t: time ) from new Date()
+        request : NumberPortRequest( date before[30] $t )
+        //request : NumberPortRequest( date before inOneMonth() )
     then
         request.setStatus("invalid");
         System.out.println("Executed Rule: " + drools.getRule().getName() + ": " + request.getDate() + " is before " + inOneMonth());
