@@ -18,5 +18,6 @@ rule "Validate date"
         request : NumberPortRequest( date.before(inOneMonth()) )
     then
         request.setStatus("validate");
+        System.out.println("Executed Rule: " + drools.getRule().getName() );
 
 end
