@@ -11,7 +11,7 @@ function Date inOneMonth() {
 rule "Validate date"
 
     when
-        date.before(inOneMonth)
+        date.before(inOneMonth())
     then
         status="validate";
 
