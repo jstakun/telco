@@ -1,4 +1,6 @@
 import java.lang.Number;
+import com.redhat.waw.bpm.NumberPortRequest;
+import java.util.Date;
 
 rule "ValidateRequest"
 	dialect "mvel"
