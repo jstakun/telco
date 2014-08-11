@@ -4,4 +4,40 @@
 <property name="name" value="Request.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="request_date" type="InputDate" id="2122962383">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (request)quot;"/>
+<property name="inputBinding" value="request/date"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="1" name="request_firstname" type="InputText" id="279672960">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;firstname (request)quot;"/>
+<property name="inputBinding" value="request/firstname"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="request_lastname" type="InputText" id="709227105">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;lastname (request)quot;"/>
+<property name="inputBinding" value="request/lastname"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="request_number" type="InputTextBigInteger" id="1643485022">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;number (request)quot;"/>
+<property name="inputBinding" value="request/number"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.math.BigInteger"/>
+</field>
+<field position="4" name="request_status" type="InputText" id="962975512">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;status (request)quot;"/>
+<property name="inputBinding" value="request/status"/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="request" name="#0000A0" type="dataModelerEntry" outId="" value="com.redhat.waw.bpm.NumberPortRequest" id="request"/>
 </form>
