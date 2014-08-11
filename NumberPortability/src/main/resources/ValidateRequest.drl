@@ -19,7 +19,7 @@ rule "Valid date"
         request : NumberPortRequest( date after inOneMonth() )
     then
         request.setStatus("validated");
-        System.out.println("Executed Rule: " + drools.getRule().getName() + " with dates " + request.getDate() + " and " + inOneMonth());
+        System.out.println("Executed Rule: " + drools.getRule().getName() + ":  " + request.getDate() + " is after " + inOneMonth());
 end
 
 rule "Invalid date"
@@ -30,7 +30,7 @@ rule "Invalid date"
         request : NumberPortRequest( date before inOneMonth() )
     then
         request.setStatus("invalid");
-        System.out.println("Executed Rule: " + drools.getRule().getName() + " with dates " + request.getDate() + " and " + inOneMonth());
+        System.out.println("Executed Rule: " + drools.getRule().getName() + ": " + request.getDate() + " is before " + inOneMonth());
 
 end
 
