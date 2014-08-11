@@ -21,15 +21,3 @@ rule "Validate date"
         System.out.println("Executed Rule: " + drools.getRule().getName() );
 
 end
-
-rule "One more time validdate date"
-
-    ruleflow-group "validate"
-
-    when
-        request : NumberPortRequest( date.after(inOneMonth()) )
-    then
-        request.setStatus("validated");
-        System.out.println("Executed Rule: " + drools.getRule().getName() );
-
-end
