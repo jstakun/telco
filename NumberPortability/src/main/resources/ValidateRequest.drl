@@ -10,7 +10,7 @@ function Date inOneMonth() {
     return now.getTime();
 }
 
-rule "Validate date"
+rule "Valid date"
 
     ruleflow-group "validate"
 
@@ -18,6 +18,18 @@ rule "Validate date"
         request : NumberPortRequest( date.after(inOneMonth()) )
     then
         request.setStatus("validated");
+        System.out.println("Executed Rule: " + drools.getRule().getName() );
+
+end
+
+rule "Invalid date"
+
+    ruleflow-group "validate"
+
+    when
+        request : NumberPortRequest( date.before(inOneMonth()) )
+    then
+        request.setStatus("invalid");
         System.out.println("Executed Rule: " + drools.getRule().getName() );
 
 end
