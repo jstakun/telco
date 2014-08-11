@@ -7,6 +7,7 @@
   <version>1.0</version>
   <packaging>kjar</packaging>
   <name>NumberPortability</name>
+  <description>Sample Telco number portability process</description>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
