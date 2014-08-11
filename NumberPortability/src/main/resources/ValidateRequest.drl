@@ -8,7 +8,6 @@ function Date inOneMonth() {
     Calendar now = Calendar.getInstance();
     now.add(Calendar.MONTH, 1);    
     Date inOneMonth = now.getTime();
-    System.out.println("In one month: " + inOneMonth);
     return inOneMonth;
 }
 
