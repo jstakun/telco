@@ -23,7 +23,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>status</fieldName>
-          <expected>validate</expected>
+          <expected>validated</expected>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
