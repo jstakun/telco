@@ -4,11 +4,18 @@
 <property name="name" value="Validation-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="4" name="request_status" type="InputText" id="1001191818">
+<field position="0" name="request_date" type="InputDate" id="1235604820">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;status (request)quot;"/>
-<property name="inputBinding" value="taskRequestInput/status"/>
-<property name="outputBinding" value="taskRequestOutput/status"/>
+<property name="label" value="quot;enquot;,quot;date (request)quot;"/>
+<property name="inputBinding" value="taskRequestInput/date"/>
+<property name="outputBinding" value="taskRequestOutput/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="1" name="request_firstname" type="InputText" id="834304057">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;firstname (request)quot;"/>
+<property name="inputBinding" value="taskRequestInput/firstname"/>
+<property name="outputBinding" value="taskRequestOutput/firstname"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="2" name="request_lastname" type="InputText" id="913143764">
@@ -18,26 +25,19 @@
 <property name="outputBinding" value="taskRequestOutput/lastname"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="1" name="request_firstname" type="InputText" id="834304057">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;firstname (request)quot;"/>
-<property name="inputBinding" value="taskRequestInput/firstname"/>
-<property name="outputBinding" value="taskRequestOutput/firstname"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="0" name="request_date" type="InputDate" id="1235604820">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (request)quot;"/>
-<property name="inputBinding" value="taskRequestInput/date"/>
-<property name="outputBinding" value="taskRequestOutput/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
 <field position="3" name="request_number" type="InputTextBigInteger" id="946494071">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;number (request)quot;"/>
 <property name="inputBinding" value="taskRequestInput/number"/>
 <property name="outputBinding" value="taskRequestOutput/number"/>
 <property name="fieldClass" value="java.math.BigInteger"/>
+</field>
+<field position="4" name="request_status" type="InputText" id="1001191818">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;status (request)quot;"/>
+<property name="inputBinding" value="taskRequestInput/status"/>
+<property name="outputBinding" value="taskRequestOutput/status"/>
+<property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="taskRequestInput" name="#0000A0" type="dataModelerEntry" outId="taskRequestOutput" value="com.redhat.waw.bpm.NumberPortRequest" id="request"/>
 </form>
