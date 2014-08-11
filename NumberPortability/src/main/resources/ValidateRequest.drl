@@ -6,8 +6,8 @@ import com.redhat.waw.bpm.NumberPortRequest;
 
 function Date inOneMonth() {
     Calendar now = Calendar.getInstance();
-    return now.add(Calendar.MONTH, 1).getTime();
-    //return new Date();
+    now.add(Calendar.MONTH, 1);    
+    return now.getTime();
 }
 
 rule "Validate date"
