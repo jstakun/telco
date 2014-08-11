@@ -32,9 +32,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <rules>
-    <string>Validate date</string>
-  </rules>
+  <rules/>
   <inclusive>true</inclusive>
   <packageName></packageName>
   <imports>
