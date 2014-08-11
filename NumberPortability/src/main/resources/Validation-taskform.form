@@ -32,12 +32,5 @@
 <property name="outputBinding" value="taskRequestOutput/number"/>
 <property name="fieldClass" value="java.math.BigInteger"/>
 </field>
-<field position="4" name="request_status" type="InputText" id="1001191818">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;status (request)quot;"/>
-<property name="inputBinding" value="taskRequestInput/status"/>
-<property name="outputBinding" value="taskRequestOutput/status"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
 <dataHolder inputId="taskRequestInput" name="#0000A0" type="dataModelerEntry" outId="taskRequestOutput" value="com.redhat.waw.bpm.NumberPortRequest" id="request"/>
 </form>
