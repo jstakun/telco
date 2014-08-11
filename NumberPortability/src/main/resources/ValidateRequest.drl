@@ -16,7 +16,8 @@ rule "Valid date"
     ruleflow-group "validate"
 
     when
-        request : NumberPortRequest( date after inOneMonth() )
+        Date( $t: time ) from new Date()
+        request : NumberPortRequest( date after[30] $t )
     then
         request.setStatus("validated");
         System.out.println("Executed Rule: " + drools.getRule().getName() + ":  " + request.getDate() + " is after " + inOneMonth());
