@@ -22,17 +22,17 @@ rule "Valid date"
         System.out.println("Executed Rule: " + drools.getRule().getName() + " with dates " + request.getDate() + " and " + inOneMonth());
 end
 
-rule "Invalid date"
-    dialect "mvel"
-    ruleflow-group "validate"
+//rule "Invalid date"
+//    dialect "mvel"
+//    ruleflow-group "validate"
 
-    when
-        request : NumberPortRequest( date <= inOneMonth() )
-    then
-        request.setStatus("invalid");
-        System.out.println("Executed Rule: " + drools.getRule().getName() + " with dates " + request.getDate() + " and " + inOneMonth());
+//    when
+//        request : NumberPortRequest( date <= inOneMonth() )
+//    then
+//        request.setStatus("invalid");
+//        System.out.println("Executed Rule: " + drools.getRule().getName() + " with dates " + request.getDate() + " and " + inOneMonth());
 
-end
+//end
 
 rule "Retract request after validation"
 	dialect "mvel"
