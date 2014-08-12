@@ -86,7 +86,7 @@
 <property name="readonly" value="false"/>
 <property name="size" value=""/>
 <property name="formula" value=""/>
-<property name="rangeFormula" value=""/>
+<property name="rangeFormula" value="{approved, Approve request; disapproved, Reject request}"/>
 <property name="pattern" value=""/>
 <property name="styleclass" value=""/>
 <property name="cssStyle" value=""/>
