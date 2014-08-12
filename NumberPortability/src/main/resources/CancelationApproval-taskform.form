@@ -140,6 +140,14 @@
 <property name="outputBinding" value=""/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
+<field position="8" name="message" type="InputTextArea" id="190717325">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;taskMessage (message)quot;"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="taskMessage"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="taskMessage" value="java.lang.String" id="message"/>
 <dataHolder inputId="requestTask" name="#0000A0" type="dataModelerEntry" outId="" value="com.redhat.waw.bpm.NumberPortRequest" id="request"/>
 <dataHolder inputId="" name="#A7E690" type="basicType" outId="requestStatus" value="java.lang.String" id="status"/>
 </form>
