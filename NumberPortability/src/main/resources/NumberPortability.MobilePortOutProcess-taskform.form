@@ -36,7 +36,7 @@
 <property name="formula" value=""/>
 <property name="styleclass" value=""/>
 <property name="cssStyle" value=""/>
-<property name="defaultValueFormula" value="=new java.util.Date(System.currentTimeMillis()+2678400000l)"/>
+<property name="defaultValueFormula" value="=new java.util.Date(System.currentTimeMillis()+(86400000l*32))"/>
 <property name="inputBinding" value=""/>
 <property name="outputBinding" value="request/portdate"/>
 <property name="fieldClass" value="java.util.Date"/>
