@@ -9,7 +9,7 @@ function int daysFromNow(Date inDate) {
     Calendar fix = Calendar.getInstance();
     fix.setTime(inDate);
     fix.add(Calendar.YEAR, 2000);
-    System.out.println(fix.getTime() + " " + fix.getTimeInMillis());  
+    System.out.println("Fixed date: " + fix.getTime() + " " + fix.getTimeInMillis());  
     return (int)((fix.getTimeInMillis() - Calendar.getInstance().getTimeInMillis()) / (24 * 60 * 60 * 1000));
 }
 
