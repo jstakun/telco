@@ -12,7 +12,7 @@ rule "Valid date"
     ruleflow-group "validate"
 
     when
-        request : NumberPortRequest( daysFromNow(date) > 30 )
+        request : NumberPortRequest( daysFromNow(date) >= 30 )
     then
         request.setStatus("validated");
         System.out.println("Executed Rule: " + drools.getRule().getName() + ":  " + request.getDate() + " is " +  daysFromNow(request.getDate()) + " days from now");
@@ -23,7 +23,7 @@ rule "Invalid date"
     ruleflow-group "validate"
 
     when
-        request : NumberPortRequest( daysFromNow(date) <= 30 )
+        request : NumberPortRequest( daysFromNow(date) < 30 )
     then
         request.setStatus("invalid");
         System.out.println("Executed Rule: " + drools.getRule().getName() + ": " + request.getDate() + " is " +  daysFromNow(request.getDate()) + " days from now");
