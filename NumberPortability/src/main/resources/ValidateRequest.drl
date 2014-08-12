@@ -4,11 +4,8 @@ import com.redhat.waw.bpm.NumberPortRequest;
 
 //declare any global variables here
 
-function Date inOneMonth() {
-    Calendar now = Calendar.getInstance();
-    now.add(Calendar.MONTH, 1);    
-    Date inOneMonth = now.getTime();
-    return inOneMonth;
+function int daysFromNow(Date inDate) {
+    return (inDate.getTime() - currentTimeMillis()) / (24 * 60 * 60 * 1000);
 }
 
 rule "Valid date"
@@ -16,11 +13,10 @@ rule "Valid date"
     ruleflow-group "validate"
 
     when
-        request : NumberPortRequest( $date : date )
-        not  NumberPortRequest($date < inOneMonth()) 
+        request : NumberPortRequest( daysFromNow(date) > 30 )
     then
         request.setStatus("validated");
-        System.out.println("Executed Rule: " + drools.getRule().getName() + ":  " + request.getDate() + " is after " + inOneMonth());
+        System.out.println("Executed Rule: " + drools.getRule().getName() + ":  " + request.getDate() + " is " +  daysFromNow(request.getDate()) + " days from now");
 end
 
 rule "Invalid date"
@@ -28,12 +24,10 @@ rule "Invalid date"
     ruleflow-group "validate"
 
     when
-        //request : NumberPortRequest( date before inOneMonth() )
-        request : NumberPortRequest( $date : date )
-        not  NumberPortRequest($date > inOneMonth()) 
+        request : NumberPortRequest( daysFromNow(date) <= 30 )
     then
         request.setStatus("invalid");
-        System.out.println("Executed Rule: " + drools.getRule().getName() + ": " + request.getDate() + " is before " + inOneMonth());
+        System.out.println("Executed Rule: " + drools.getRule().getName() + ": " + request.getDate() + " is " +  daysFromNow(request.getDate()) + " days from now");
 
 end
 
