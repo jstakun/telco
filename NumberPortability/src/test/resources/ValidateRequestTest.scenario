@@ -7,8 +7,8 @@
       <type>NumberPortRequest</type>
       <fieldData>
         <field-data>
-          <name>date</name>
-          <value>12-Sep-2014</value>
+          <name>portdate</name>
+          <value>12-Aug-2014</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
