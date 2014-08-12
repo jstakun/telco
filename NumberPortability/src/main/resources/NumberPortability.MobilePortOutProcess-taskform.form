@@ -16,7 +16,7 @@
 <property name="formula" value=""/>
 <property name="styleclass" value=""/>
 <property name="cssStyle" value=""/>
-<property name="defaultValueFormula" value="= new java.util.Date()"/>
+<property name="defaultValueFormula" value="= Calendar.getInstance().getDate()"/>
 <property name="inputBinding" value=""/>
 <property name="outputBinding" value="request/date"/>
 <property name="fieldClass" value="java.util.Date"/>
