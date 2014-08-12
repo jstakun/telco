@@ -7,9 +7,9 @@ import com.redhat.waw.bpm.NumberPortRequest;
 function int daysFromNow(Date inDate) {
     System.out.println(inDate + " " + inDate.getTime() + " " + Calendar.getInstance().getTime() + " " + Calendar.getInstance().getTimeInMillis());
     Calendar fix = Calendar.getInstance();
-    fix.setDate(inDate);
-    fix.add(Calendar.YEAR, 2000);
-    System.out.println(fix.getTime() + " " + fix.getTimeInMillis());  
+    //fix.setDate(inDate);
+    //fix.add(Calendar.YEAR, 2000);
+    //System.out.println(fix.getTime() + " " + fix.getTimeInMillis());  
     return (int)((fix.getTimeInMillis() - Calendar.getInstance().getTimeInMillis()) / (24 * 60 * 60 * 1000));
 }
 
