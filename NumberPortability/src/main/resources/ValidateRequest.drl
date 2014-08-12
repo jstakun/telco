@@ -10,8 +10,8 @@ function int daysFromNow(Date inDate) {
     fix.setTime(inDate);
     if (fix.get(Calendar.YEAR) < 2000) { 
     	fix.add(Calendar.YEAR, 2000);
+        System.out.println("Fixed date: " + fix.getTime() + " " + fix.getTimeInMillis());  
     }
-    System.out.println("Fixed date: " + fix.getTime() + " " + fix.getTimeInMillis());  
     return (int)((fix.getTimeInMillis() - Calendar.getInstance().getTimeInMillis()) / (24 * 60 * 60 * 1000));
 }
 
