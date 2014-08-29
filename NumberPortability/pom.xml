@@ -8,18 +8,6 @@
   <packaging>kjar</packaging>
   <name>NumberPortability</name>
   <description>Sample Telco number portability process</description>
-  <!--distributionManagement>
-    <repository>
-      <id>deployment</id>
-      <name>Internal Releases</name>
-      <url>http://192.168.122.1:8081/nexus/content/repositories/releases/</url>
-    </repository>
-    <snapshotRepository>
-      <id>deployment</id>
-      <name>Internal Releases</name>
-      <url>http://192.168.122.1:8081/nexus/content/repositories/snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement-->
   <dependencies>
     <dependency>
       <groupId>org.json</groupId>
