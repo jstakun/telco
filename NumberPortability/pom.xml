@@ -8,13 +8,6 @@
   <packaging>kjar</packaging>
   <name>NumberPortability</name>
   <description>Sample Telco number portability process</description>
-  <dependencies>
-    <dependency>
-      <groupId>org.json</groupId>
-      <artifactId>json</artifactId>
-      <version>20140107</version>
-    </dependency>
-  </dependencies>
   <distributionManagement>
     <repository>
       <id>deployment</id>
@@ -27,6 +20,13 @@
       <url>http://192.168.122.1:8081/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20140107</version>
+    </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
